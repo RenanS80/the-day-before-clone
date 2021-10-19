@@ -26,6 +26,12 @@ h1 {
     letter-spacing: 1px;
 }
 
+p {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 
 /* --- MAIN --- */
 main {
@@ -105,8 +111,6 @@ main {
 }
 
 .description-text {
-    margin-top: 20px;
-    line-height: 1.5;
     text-align: center;
 }
 
@@ -142,11 +146,6 @@ main {
     max-width: 500px;
 }
 
-.survive-text {
-    margin-top: 20px;
-    line-height: 1.5;
-}
-
 
 /* --- SECTION PLACES --- */
 .places {
@@ -178,11 +177,6 @@ main {
 
 .places-title, .places-text {
     max-width: 500px;
-}
-
-.places-text {
-    margin-top: 20px;
-    line-height: 1.5;
 }
 
 
@@ -217,11 +211,6 @@ main {
     max-width: 500px;
 }
 
-.world-text {
-    margin-top: 20px;
-    line-height: 1.5;
-}
-
 
 /* --- SECTION COLONY --- */
 .colony {
@@ -254,11 +243,6 @@ main {
     max-width: 500px;
 }
 
-.colony-text {
-    margin-top: 20px;
-    line-height: 1.5;
-}
-
 
 /* --- FOOTER --- */
 footer {
@@ -283,11 +267,6 @@ footer {
 
 .info-offers h1, .info-offers p {
     padding-left: 20px;
-}
-
-.info-offers p {
-    margin-top: 20px;
-    line-height: 1.5;
 }
 
 .info-form {
@@ -338,26 +317,25 @@ footer {
 
 .social-media svg {
     margin-left: 8px;
+    transition: all 0.4s ease;
+}
+
+.social-media svg:hover {
+    opacity: 0.7;
 }
 
 .social-media a {
-    opacity: 1;
-    transition: all 0.4s ease;
     text-decoration: none;
     display: inline;
     cursor: pointer;
 }
 
-.social-media a:hover {
-    opacity: 0.8;
-}
-
 .external {
     height: 100%;
-    align-items: center;
-    justify-content: flex-end;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .external-wishlist, 
@@ -391,12 +369,10 @@ footer {
     justify-content: center;
 }
 
-.publisher {
-    margin: 0px 90px;
-}
-
+.publisher,
 .developer {
     margin: 0px 90px;
+    padding-bottom: 20px;
 }
 
 small {
@@ -419,3 +395,189 @@ small {
     height: 1px;
     display: block;
 }
+
+
+/* --- MEDIA QUERY --- */
+@media (max-width: 1200px){
+    .survive-container,
+    .world-container,
+    .colony-container {
+        left: 3%;
+        width: 45%;
+    }
+
+    .places-container {
+        right: 3%;
+        width: 45%;
+    }
+
+    .survive-title, .survive-text,
+    .places-title, .places-text,
+    .world-title, .world-text,
+    .colony-title, .colony-text {
+        max-width: 600px;
+    }
+
+    .footer-container {
+        max-width: 1140px;
+    }
+
+    .info-offers h1 {
+        line-height: 1.1;
+    }
+
+    .external-wishlist, 
+    .external-media-kit {
+        margin-right: 0px;
+    }
+
+    .external-media-kit {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 992px){
+    h1 {
+        font-size: 2.7rem;
+    }
+    
+    .logo-content, .button-content {
+        max-width: 370px;
+    }
+
+    .survive-title, .survive-text,
+    .places-title, .places-text,
+    .world-title, .world-text,
+    .colony-title, .colony-text {
+        max-width: 400px;
+    }
+
+    .footer-container {
+        max-width: 1140px;
+    }
+
+    .external-wishlist, 
+    .external-media-kit {
+        margin-right: 0px;
+    }
+
+    .external-media-kit {
+        margin-right: 40px;
+    }
+
+    .footer-container {
+        max-width: 960px;
+    }
+
+    .creators {
+        margin-top: 50px;
+    }
+    
+    .publisher,
+    .developer {
+        margin: 0px 50px;
+    }
+}
+
+@media (max-width: 880px){
+    .info-form button {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 863px){
+    .info-form button {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 768px){
+    h1{
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 0.9375rem;
+    }
+    
+    .main-container {
+        width: 100%;
+    }
+    
+    .logo-content, .button-content {
+        max-width: 480px;
+    }
+
+    .survive-container,
+    .world-container,
+    .colony-container {
+        width: 100%;
+        left: 5%;
+    }
+
+    .places-container{
+        width: 100%;
+        right: 0%;
+    }
+
+    .survive-title, .survive-text,
+    .places-title, .places-text,
+    .world-title, .world-text,
+    .colony-title, .colony-text {
+        max-width: 720px;
+    }  
+
+    .places-title, .places-text{
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+    
+    .footer-container {
+        max-width: 720px;
+        padding-top: 20px;
+    }
+    
+    .info {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 40%;
+    }
+    
+    .info-offers {
+        max-width: 100%;
+    }
+        
+    .info-form {
+        margin: 30px 0px 0px 20px;
+    }
+
+    .external {
+        height: 80%;
+    }
+    
+    .external-wishlist, 
+    .external-media-kit {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 50%;
+        text-align: center;
+        width: 50%;
+    }
+    
+    .external-wishlist {
+        margin-left: 110px;
+    }
+
+    .external-media-kit {
+        margin-right: 110px;
+    }
+    
+    .external span {
+        height: 0px;
+    }
+}
+    
