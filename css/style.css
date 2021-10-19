@@ -511,15 +511,15 @@ small {
     }
 
     .survive-container,
+    .places-container,
     .world-container,
     .colony-container {
         width: 100%;
-        left: 5%;
+        left: 0;
     }
 
-    .places-container{
+    .places-text{
         width: 100%;
-        right: 0%;
     }
 
     .survive-title, .survive-text,
@@ -527,17 +527,19 @@ small {
     .world-title, .world-text,
     .colony-title, .colony-text {
         max-width: 720px;
+        padding: 0px 15px;
     }  
-
-    .places-title, .places-text{
-        margin: 0 auto;
-        padding: 0px 20px;
-    }
     
     .footer-container {
         max-width: 720px;
         padding-top: 20px;
     }
+
+
+    .description-text,
+    .info h1 {
+        padding: 0px 15px;
+    }    
     
     .info {
         flex-direction: column;
@@ -582,21 +584,4 @@ small {
     }
 }
 
-@media (max-width: 768px){
-    .survive-container,
-    .places-container,
-    .world-container,
-    .colony-container {
-        left: 0;
-    }
 
-    .description-text,
-    .survive-title, .survive-text,
-    .places-title, .places-text,
-    .world-title, .world-text,
-    .colony-title, .colony-text,
-    .info h1 {
-        padding: 0px 15px;
-    }    
-}
-    
