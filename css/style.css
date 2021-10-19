@@ -112,6 +112,7 @@ main {
 
 .description-text {
     text-align: center;
+    max-width: 500px;
 }
 
 
@@ -579,5 +580,23 @@ small {
     .external span {
         height: 0px;
     }
+}
+
+@media (max-width: 768px){
+    .survive-container,
+    .places-container,
+    .world-container,
+    .colony-container {
+        left: 0;
+    }
+
+    .description-text,
+    .survive-title, .survive-text,
+    .places-title, .places-text,
+    .world-title, .world-text,
+    .colony-title, .colony-text,
+    .info h1 {
+        padding: 0px 15px;
+    }    
 }
     
